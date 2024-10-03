@@ -52,14 +52,14 @@ for site_id in cluster['site']:
 
     if success:
         # Ship API script to remote site
-        push_api_script = f"rsync -r api_setup.sh {site['username']}@{site['ip_address']}:/var/www/EMR-API"
+        push_api_script = f"rsync -r api_setup.sh {site['username']}@{site['ip_address']}:/var/www/BHT-EMR-API"
         os.system(push_api_script)
 
         # Run setup script
-        run_api_script = f"ssh {site['username']}@{site['ip_address']} 'cd /var/www/EMR-API && ./api_setup.sh'"
+        run_api_script = f"ssh {site['username']}@{site['ip_address']} 'cd /var/www/BHT-EMR-API && ./api_setup.sh'"
         os.system(run_api_script)
 
-        result = Connection(f"{site['username']}@{site['ip_address']}").run('cd /var/www/EMR-API && git describe', hide=True)
+        result = Connection(f"{site['username']}@{site['ip_address']}").run('cd /var/www/BHT-EMR-API && git describe', hide=True)
         version = result.stdout.strip()
 
         api_version = sp.getoutput('cd BHT-EMR-API && git describe').strip()
