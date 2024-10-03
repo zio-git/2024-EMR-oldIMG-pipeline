@@ -13,7 +13,7 @@ echo "Installing Local Gems"
 echo "____________________________________________"
 bundle install --local
 echo "--------------------------------------------"
-#rm -rf /var/www/BHT-EMR-API/db/migrate/20221112075527_create_lims_acknowledgement_statuses.rb
+rm -rf /var/www/BHT-EMR-API/db/migrate/20190527130805_create_uuid_remaps.rb
 echo "running bin_update art"
 echo "____________________________________________"
 ./bin/update_art_metadata.sh development
