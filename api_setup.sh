@@ -2,7 +2,7 @@
 echo "pulling and Checkout API tag"
 echo "--------------------------------------------"
 git fetch --tags jenkins@10.44.0.51:/var/lib/jenkins/workspace/2024-POC-Pipeline-Old-IMG/BHT-EMR-API -f
-git checkout v5.0.4 -f
+git checkout v5.3.0-beta -f
 git describe > HEAD
 echo "____________________________________________"
 echo "ruby setup"

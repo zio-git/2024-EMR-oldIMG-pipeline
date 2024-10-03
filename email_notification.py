@@ -13,21 +13,23 @@ subject = "Auto Deployment Status - Pilot Sites"
 smtp_server = "smtp-mail.outlook.com"
 smtp_port = 587
 sender_email = "hisalerts@pedaids.org"
-sender_password = "DevOps!2024#__Team3-new"
+sender_password = "DevOps!2024#__Team3-new1"
 
 
 body = """
 Good day,
 
-For information on facilities that have been automatically deployed in the Zones or Districts, please see the attached auto deployment status.
-Three categories have been used to group the facilites;
+Attached is the latest auto deployment status for facilities across the Zones or Districts. The facilities have been categorized as follows:
 
- * Updated sites - successfully updated sites
- * Failed sites - failed sites where deployment was incomplete
- * Unreachable sites - sites that could not be accessed.
+    *Updated Sites: Deployment completed successfully.
+    *Failed Sites: Deployment was incomplete or encountered errors.
+    *Unreachable Sites: Sites that could not be accessed during deployment.
 
-Kind Regards,
-HIS DevOps
+Please review the attached report, and let us know if you require further details or assistance.
+
+Kind regards,
+HIS DevOps Team
+
 """  # Replace with your actual email body content
 
 # Attachment files
