@@ -9,7 +9,6 @@ from email.mime.text import MIMEText
 email_recipients = ["zmwakanema@pedaids.org", "oonions@pedaids.org", "willmbowe@gmail.com", "tlwara@pedaids.org", "domstig248@gmail.com", "mnaboti@pedaids.org"]
 subject = "Auto Deployment Status - Pilot Sites"
 
-
 smtp_server = "smtp-mail.outlook.com"
 smtp_port = 587
 sender_email = "hisalerts@pedaids.org"
